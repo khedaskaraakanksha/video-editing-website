@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-img {
+    width: 250px;
+    margin-top: 20px;
+}
+
+/* SECTION */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+}
+
+/* ABOUT */
+.about-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 32px;
+    color: black;
+}
+
+.about-video {
+    width: 300px;
+    margin: 20px;
+}
+
+.about-img {
+    width: 300px;
+}
+
+/* TOOLS */
+.tools-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+}
+
+.tools-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.tools-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tool-img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.tools-text {
+    width: 40%;
+    min-width: 250px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.tools-caption {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* SERVICES */
+.services-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* TOP IMAGE */
+.services-top-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* TOP IMAGE SIZE FIX */
+.services-top-img img {
+    width: 300px;   /* 400 varun 300 kelay */
+    max-width: 90%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* CARDS */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: rgba(255,255,255,0.4);
+    padding: 20px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* BOTTOM IMAGE */
+.services-bottom-img {
+    display: flex;
+    justify-content: center;
+}
+
+.services-bottom-img img {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+/* CONTACT */
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+}
+
+.contact-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-sub {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.contact-info {
+    text-align: left;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BUTTON */
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+/* CAPTION */
+.contact-caption {
+    margin-top: 30px;
+    font-weight: bold;
+}
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* SCROLL ANIMATION START STATE */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.6s;
+}
+
+/* IMAGE HOVER */
+img {
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON EFFECT */
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* GRADIENT HEADINGS */
+h2 {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* GENERAL */
+h1, h2 {
+    color: black;
+}
+
+p {
+    color: #333;
+}
